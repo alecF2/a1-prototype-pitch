@@ -1,0 +1,11 @@
+#container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding: 50px;
+  background-color: blue;
+}
+
+.selection {
+  max-width: 200px;
+}
