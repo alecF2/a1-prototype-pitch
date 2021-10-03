@@ -1,0 +1,17 @@
+#container {
+  flex: 1 0 40%;
+  display: flex;
+  // justify-content: space-around;
+}
+
+#imageSelect {
+  flex: 1 0 calc(50% - 20px);
+  padding: 10px;
+  background-color: #ca94fe;
+}
+
+#imageInfo {
+  flex: 1 0 calc(50% - 20px);
+  padding: 10px;
+  background-color: #fffec3;
+}

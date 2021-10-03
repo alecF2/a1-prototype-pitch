@@ -1,8 +1,8 @@
-import LanguageSelect from "./components/LanguageSelect";
+import Main from "./pages/Main";
 
 function App() {
   return (
-    <LanguageSelect />
+    <Main />
   );
 }
 

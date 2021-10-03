@@ -1,9 +1,9 @@
 #container {
+  flex: 0 0 20%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  padding: 50px;
-  background-color: blue;
+  background-color: #33abfe;
 }
 
 .selection {
