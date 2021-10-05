@@ -1,9 +1,20 @@
 import styles from './LanguageSelect.module.scss'
 
-const LanguageSelect = () => {
+import { Dispatch, SetStateAction } from 'react'
+
+interface LanguageProps {
+  setLanguage: Dispatch<SetStateAction<string>>
+}
+
+const LanguageSelect = ({ setLanguage }: LanguageProps) => {
+  // const langRef = useRef<HTMLSelectElement>(null)
+  // useEffect(() => {
+
+  // }, [])
+
   return (
     <section id={styles.container}>
-      <select id="langSelect" className={styles.selection}>
+      <select id="langSelect" className={styles.selection} onChange={(e) => setLanguage(e.target.value)}>
         <option value="">Select a Language</option>
         <option value="Spanish">Spanish</option>
       </select>
