@@ -11,11 +11,11 @@ const WordInput = ({setWord, setTranslation}: wordProps) => {
     <section id={styles.container}>
       <div className={`${styles.inputBox} ${styles.blue}`}>
         <label>Spanish</label>
-        <input type="text" name="spanishWord" id={styles.spanishWord} onChange={(e) => setWord(e.target.value)} />
+        <input type="text" name="spanishWord" id={styles.spanishWord} onChange={(e) => setWord(e.target.value)} required />
       </div>
       <div className={styles.inputBox}>
         <label>English</label>
-        <input type="text" name="englishWord" id={styles.englishWord} onChange={(e) => setTranslation(e.target.value)} />
+        <input type="text" name="englishWord" id={styles.englishWord} onChange={(e) => setTranslation(e.target.value)} required />
       </div>
     </section>
   )

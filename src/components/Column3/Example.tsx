@@ -9,7 +9,7 @@ const Example = ({ setExample }: exampleProps) => {
   return (
     <section id={styles.container}>
       <label htmlFor="input">Example</label>
-      <textarea id="input" rows={5} cols={30} onChange={(e) => setExample(e.target.value)}></textarea>
+      <textarea id="input" rows={5} cols={30} onChange={(e) => setExample(e.target.value)} required></textarea>
     </section>
   )
 }

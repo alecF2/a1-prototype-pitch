@@ -14,7 +14,7 @@ const LanguageSelect = ({ setLanguage }: LanguageProps) => {
 
   return (
     <section id={styles.container}>
-      <select id="langSelect" className={styles.selection} onChange={(e) => setLanguage(e.target.value)}>
+      <select id="langSelect" className={styles.selection} onChange={(e) => setLanguage(e.target.value)} required>
         <option value="">Select a Language</option>
         <option value="Spanish">Spanish</option>
       </select>
