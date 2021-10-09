@@ -66,10 +66,7 @@ app.on("ready", () => {
 
 
 let connection: r.Connection
-r.connect({
-  host: "localhost",
-  port: 28015
-}, (err, conn) => {
+r.connect({ host: "localhost", port: 28015 }, (err, conn) => {
   if (err) {
     console.log(err)
     throw err

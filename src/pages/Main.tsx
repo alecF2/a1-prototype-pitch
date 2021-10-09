@@ -32,9 +32,9 @@ const Main = () => {
     form.append("pronunciation", pronunciation as Blob)
 
     const response = await axios.post("http://localhost:4000/add_item", form)
-    console.log(response)
+    console.log(response.data)
 
-    console.log("submitted")
+    // console.log("submitted")
   }
 
   useEffect(() => {
